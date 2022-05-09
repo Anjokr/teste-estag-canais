@@ -1,11 +1,11 @@
 package my_program;
 
 public class Person {
-    String name;
-    int agency;
-    int account;
-    String cpf;
-    double balance;
+    private String name;
+    private int agency;
+    private int account;
+    private String cpf;
+    private double balance;
 
     public Person(String name, int agency, int account, String cpf) {
         this.name = name;
@@ -33,5 +33,13 @@ public class Person {
 
     public double getBalance() {
         return balance;
+    }
+
+    public void addBalance(double value) {
+        balance += value;
+    }
+
+    public void subtractBalance(double value) {
+        balance -= value;
     }
 }
