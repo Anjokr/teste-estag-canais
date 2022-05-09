@@ -47,7 +47,7 @@ public class Interface {
         Person receiver = new Person(receiverName, receiverAgency, receiverAccount, receiverCPF);
 
         //start the transfer operation
-        Operation op = new Operation(sender, receiver, transferId, transferValue, transferType);
+        Operation op = new Operation(sender, receiver, transferValue, transferType);
         op.start();
     }
 
